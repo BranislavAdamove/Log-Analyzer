@@ -3,7 +3,7 @@ from collections import Counter,defaultdict
 import re 
 
 IP_PATTERN = re.compile(r"\b(?:(?:\d{1,3}\.){3}\d{1,3}|(?:[A-Fa-f0-9:]+:+)+[A-Fa-f0-9]+)\b")
-STATUS_PATTERN = re.compile(r'"\s(\d{3})\s')
+STATUS_PATTERN = re.compile(r'"\s*(\d{3})\s')
 VALID_STATUS = {
     "100","101","200","201","204",
     "301","302","304",
