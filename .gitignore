@@ -3,42 +3,37 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual environments
+
 venv/
 .venv/
 .env/
 
-# Logs (don’t upload real logs)
 *.log
 
-# Environment variables
 .env
 .env.*
 
-# OS files
+
 .DS_Store
 Thumbs.db
 
-# IDE / editors
+
 .vscode/
 .idea/
 
-# Build / packaging
 build/
 dist/
 *.egg-info/
 
-# Jupyter
+
 .ipynb_checkpoints/
 
-# Temporary files
 *.tmp
 *.swp
 
-# Coverage reports
 .coverage
 htmlcov/
 
-# SQLite databases
+
 *.sqlite3
 
