@@ -2,7 +2,7 @@ import sys
 from collections import Counter 
 
 
-if len(sys.argv) > 2:
+if len(sys.argv) != 2:
     print("Usage: python analyzer.py accesslog")
     sys.exit(1)
 
@@ -11,7 +11,7 @@ ip_list = Counter()
 try:
     with open(log_file,'r') as f:
         for line in f:
-            part = f.split()
+            part = line.split()
             if len(part) == 0:
                 continue 
             ip = part[1]
